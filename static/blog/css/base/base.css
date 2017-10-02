@@ -1,0 +1,11 @@
+.to_top_icon {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 40px;
+    right: 50px;
+}
+
+.to_top_icon:hover {
+    cursor: pointer;
+}

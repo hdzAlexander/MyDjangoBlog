@@ -1,0 +1,63 @@
+.content {
+    width: 70%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.article_index_title {
+    width: 70%;
+    margin: auto;
+    height: 34px;
+    margin-top: 50px;
+}
+
+.new_article {
+    float: right;
+}
+
+.category_count {
+    font-size: 22px;
+    display: inline;
+}
+
+.list_content {
+    margin: 15px auto;
+}
+
+.list_content span {
+    font-size: 17px;
+    color: #9a9a9a;
+
+}
+
+.list_content a {
+    font-size: 18px;
+    margin-left: 22px;
+    color: #3570b2;
+}
+
+.list_content a:hover {
+    color: #1e88e5;
+}
+
+.content a {
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+
+.last_page {
+    float: left;
+}
+
+.next_page {
+    float: right;
+}
+
+.page {
+    margin-top: 20px;
+    height: 60px;
+}
+
+

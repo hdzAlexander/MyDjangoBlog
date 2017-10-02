@@ -1,0 +1,32 @@
+.category_index {
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.category_count {
+    text-align: center;
+}
+
+.category_list {
+    margin-top: 25px;
+}
+
+.category_content span {
+    color: #999899;
+    font-size: 15px;
+}
+
+.category_content a {
+    color: inherit;
+}
+
+.category_content a:hover {
+    color: #1e88e5;
+}
+
+.new_category {
+    float: right;
+    font-size: 10px;
+    padding: 5px 11px;
+}

@@ -1,0 +1,27 @@
+.content p span {
+    color: #53497b;
+    font-size: 32px;
+}
+
+.content p {
+    font-size: 22px;
+}
+
+.article_with_category_title {
+    margin-bottom: 8px;
+}
+
+.edit_category {
+    float: right;
+    margin-right: 30px;
+}
+
+p#category_describe {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #747474;
+}
+
+p#category_describe span {
+    font-size: 13px;
+}

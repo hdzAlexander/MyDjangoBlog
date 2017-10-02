@@ -1,0 +1,37 @@
+#editor {
+    height: 500px;
+}
+
+#article_edit {
+    margin: 0 12% 100px 12%;
+}
+
+.article_edit {
+    width: 100%;
+    margin: auto;
+}
+
+.article_edit_title {
+    margin: 20px auto;
+    width: 95%;
+}
+
+.article_edit_title div {
+    margin: 10px auto;
+}
+
+.article_edit_title span {
+    margin-left: 1%;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+}
+
+.article_edit_title input {
+    width: 45%;
+    margin-left: 8%;
+}
+
+.submit_button {
+    margin-top: 10px;
+}

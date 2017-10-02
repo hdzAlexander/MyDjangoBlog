@@ -1,0 +1,42 @@
+.category {
+    margin-top: 30px;
+    float: right;
+    margin-right: 8%;
+    width: 27%;
+    text-align: center;
+    max-height: 1200px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.category .category_title {
+    background-color: #120909;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 8px;
+    font-size: 15px;
+}
+
+.category_title a {
+    color: white;
+}
+
+h4 {
+    color: #4d1a19;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    font-size: 10px;
+    color: #878787;
+}
+
+.category_content p {
+    text-indent: 20px;
+}
+
+.category_content span:hover {
+    color: #ff241e;
+}

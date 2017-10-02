@@ -1,0 +1,10 @@
+{% extends 'blog/base/base.html' %}
+
+{% block title %}
+首页
+{% endblock %}
+
+{% block content %}
+    {% include 'blog/article/article_list.html' %}
+    {% include 'blog/category/category_list.html' %}
+{% endblock %}

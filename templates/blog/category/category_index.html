@@ -1,0 +1,21 @@
+{% extends 'blog/base/base.html' %}
+
+{% block title %}
+分类列表
+{% endblock %}
+
+{% block content %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'blog/css/category/category.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/category/category_index.css' %}">
+    <script src="{% static 'blog/js/category/category_index.js' %}"></script>
+
+    <div class="category_index">
+        <h4 class="category_count">目前共计{{ category_list.count }}个分类</h4>
+        <div><button class="new_category btn btn-danger">新分类</button></div>
+    <div class="category_list"></div>
+    </div>
+
+    {% include 'blog/category/category_edit.html' %}
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'blog/base/base.html' %}
+
+{% block title %}
+写入新文章
+{% endblock %}
+
+{% block content %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'blog/lib/css/wangEditor.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/article/article_edit.css' %}">
+    <script src="{% static 'blog/lib/js/wangEditor.min.js' %}"></script>
+    <script src="{% static 'blog/js/article/article_new.js' %}"></script>
+
+
+    <div id="article_edit">
+        <div class="article_edit_title">
+            <div><span>博客标题：</span><input class="article_title" type="text"></div>
+            <div><span>博客分类：</span><input class="article_category" type="text"></div>
+        </div>
+        <div class="article_edit" id="{{ article_detail.id }}">
+            <div id="editor">
+                <p></p>
+            </div>
+        </div>
+        <button class="submit_button btn btn-default">点击完成</button>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+{% load custom_markdown %}
+<link rel="stylesheet" href="{% static 'blog/css/article/article_list.css' %}">
+<script src="{% static 'blog/js/article/article_list.js' %}"></script>
+
+<div class="article">
+
+<div class="article_top">
+    <a href="{% url 'blog:article_index' %}">Article</a>
+    <div class="title_line"></div>
+</div>
+<div class="content" id="{{ page }}">
+    <div class="article_list"></div>
+
+    <div class="page">
+        <ul>
+            <li><a class="last_page" href="">上一页</a></li>
+            <li><a class="next_page" href="">下一页</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+</div>

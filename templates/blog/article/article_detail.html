@@ -1,0 +1,32 @@
+{% extends 'blog/base/base.html' %}
+
+{% block title %}
+    {{ article_detail.title }}
+{% endblock %}
+
+{% block content %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'blog/css/article/article_detail.css' %}">
+    <script src="{% static 'blog/js/article/article_detail.js' %}"></script>
+
+    <div class="article_detail" id="{{ article_detail.id }}">
+    <h2>{{ article_detail.title }}<a href="{% url 'blog:article_edit' article_detail.id %}"><img class="edit_icon" src="{% static 'blog/img/edit.png' %}" alt=""></a></h2>
+    <div class="article_message">
+        <p><span>{{ article_detail.publish_time }}</span>&nbsp;&nbsp;&nbsp;
+            点赞数:<span class="likes_count">{{ article_detail.likes_count }}</span>&nbsp;&nbsp;&nbsp;
+            浏览数:<span class="browse_count">{{ article_detail.browse_count }}</span>&nbsp;&nbsp;&nbsp;
+            总字数:<span class="word_count"></span>
+            <img class="like_img" src="{% static 'blog/img/like.png' %}" alt="">
+        </p>
+        <p>
+            所属分类: <span>{{ article_detail.category }}</span>
+        </p>
+    </div>
+    <div class="article_text"></div>
+
+    </div>
+
+
+
+
+{% endblock %}

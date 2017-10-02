@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'blog/css/category/category.css' %}">
+
+<div class="category">
+    <button disabled="disabled" class="category_title"><a href="{% url 'blog:category_index' %}">Category</a></button>
+    {% for category in category_list %}
+        <div class="category_content">
+            <a href="{% url 'blog:article_with_category' category.name %}"><h4><span>{{ category.name }}</span></h4></a>
+            {% if category.describe != "null" %}
+                <p>{{ category.describe }}</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

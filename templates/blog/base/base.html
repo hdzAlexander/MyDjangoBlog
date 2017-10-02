@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <script src="{% static 'blog/lib/js/jquery-3.0.0.js' %}"></script>
+    <script src="{% static 'blog/js/service/api.js' %}"></script>
+    <script src="{% static 'blog/js/tool/calc_count.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'blog/css/base/base.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/lib/css/bootstrap.min.css' %}">
+</head>
+<body style="min-width: 850px">
+
+{% include 'blog/base/nav.html' %}
+
+<div class="base_content" style="overflow: hidden; min-height: 540px">
+    {% block content %}
+
+{% endblock %}
+</div>
+
+<img hidden="hidden" class="to_top_icon" src="{% static 'blog/img/to_top.png' %}" >
+
+
+{% include 'blog/base/bottom.html' %}
+
+<script src="{% static 'blog/js/base/base.js' %}"></script>
+<script src="{% static 'blog/lib/js/bootstrap.min.js' %}"></script>
+
+
+</body>
+</html>

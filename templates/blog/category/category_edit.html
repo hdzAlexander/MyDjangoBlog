@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<script src="{% static 'blog/js/category/category_edit.js' %}"></script>
+<link rel="stylesheet" href="{% static 'blog/css/category/category_edit.css' %}">
+
+<div class="category_edit_back" hidden="hidden">
+</div>
+<div class="category_edit">
+    <div class="edit_close">
+        Category
+        <img class="img_close" src="{% static 'blog/img/close.png' %}" >
+    </div>
+    {% if category_name %}
+        <p><span>name：</span><input value="{{ category_name }}" type="text" class="category_name form-control"></p>
+        <p><span>describe：</span><input value="{{ category_describe }}" type="text" class="category_describe form-control"></p>
+    {% else %}
+        <p><span>name：</span><input type="text" class="category_name form-control"></p>
+        <p><span>describe：</span><input type="text" class="category_describe form-control"></p>
+    {% endif %}
+    <button class="new_category_submit btn btn-default">submit</button>
+</div>

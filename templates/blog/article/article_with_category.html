@@ -1,0 +1,23 @@
+{% extends 'blog/base/base.html' %}
+
+{% block title %}
+{{ category_name }}文章
+{% endblock %}
+
+
+{% block content %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'blog/css/article/article_index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/article/article_with_category.css' %}">
+    <script src="{% static 'blog/js/article/article_with_category.js' %}"></script>
+
+
+    <div class="content" id="{{ category_name }}">
+    <p class="article_with_category_title">分类：<span>{{ category_name }}</span><button class="btn btn-info edit_category">编辑分类</button></p>
+    <p id="category_describe">描述信息：<span>{{ category_describe }}</span></p>
+    <div class="list_content"></div>
+    </div>
+
+
+    {% include 'blog/category/category_edit.html' %}
+{% endblock %}

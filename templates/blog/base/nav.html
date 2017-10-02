@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'blog/css/base/nav.css' %}">
+<script src="{% static 'blog/js/base/nav.js' %}"></script>
+<div class="top_line"></div>
+<div class="container-fluid navigation">
+    <div class="title">
+        <ul>
+            <li><a href="{% url 'blog:index' %}">首页</a></li>
+            <li><a href="{% url 'blog:article_index' %}">文章</a></li>
+            <li><a href="{% url 'blog:category_index' %}">分类</a></li>
+        </ul>
+    </div>
+    <div class="user_function">
+        <a class="btn btn-danger" href="{% url 'blog:sign_in' %}">登录</a>
+            <a class="btn btn-primary" href="{% url 'blog:register' %}">注册</a>
+    </div>
+    <div class="search">
+        <input placeholder="Search" type="text" class="search"><img class="search_img" src="{% static 'blog/img/search.png' %}" alt="">
+    </div>
+
+</div>
+<div class="bottom_line"></div>

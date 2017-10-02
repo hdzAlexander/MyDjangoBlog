@@ -1,0 +1,26 @@
+{% extends 'blog/base/base.html' %}
+
+{% block title %}
+文章列表
+{% endblock %}
+
+{% block content %}
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'blog/css/article/article_index.css' %}">
+    <script src="{% static 'blog/js/article/article_index.js' %}"></script>
+
+    <div class="article_index_title">
+        <h4 class="category_count">共计{{ article_list.count }}篇文章：</h4>
+        <a href="{% url 'blog:article_new' %}" class="btn btn-danger new_article">新文章</a>
+    </div>
+    <div class="content" id="{{ page }}">
+
+    <div class="list_content"></div>
+    <div class="page">
+        <a class="last_page btn btn-default">← Last</a>
+        <a class="next_page btn btn-default">Next →</a>
+    </div>
+    </div>
+
+
+{% endblock %}
